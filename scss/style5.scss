@@ -31,10 +31,12 @@ body .fullcontain.lowresolve{
     display:grid;   
 }
 .fullcontain .container .card .project.info .buttons a{ 
-    padding: 20px;
+    padding: 15px;
     border: 2px solid #ccc;
-    border-radius: 20px;
-    background: #DEC849;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    background: linear-gradient(#79bc64,#578843);
 }
 
 
