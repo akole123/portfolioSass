@@ -1,0 +1,115 @@
+$glow : inset 0 0 50px #fff,      /* inner white */
+inset 20px 0 80px #f0f,   /* inner left magenta short */
+inset -20px 0 80px #0ff,  /* inner right cyan short */
+inset 20px 0 300px #f0f,  /* inner left magenta broad */
+inset -20px 0 300px #0ff, /* inner right cyan broad */
+0 0 50px #fff,            /* outer white */
+-10px 0 80px #f0f,        /* outer left magenta */
+10px 0 80px #0ff; 
+$bar-size: 7px;
+// order-radius
+#top,#bottom,#left,#right{
+    background: #a5ebff;
+    position: absolute;
+}   
+#left{
+    top: 0%;
+    bottom: 0%;
+    width:$bar-size;
+    box-shadow: $glow;     /* inner white */
+    border-radius: 50%;
+    animation:bar-left;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#left{
+    left:0;
+}
+#right{
+    top: 0%;
+    bottom: 0%;
+    width:$bar-size;
+    box-shadow: $glow; 
+    border-radius: 50%;
+    animation:bar-right;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#right{
+    right:0;
+}
+#top{
+    left: 50%;right:0%;
+    height:$bar-size;
+    box-shadow: $glow;  
+    border-radius: 50%;
+    animation:bar-top;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#bottom{
+    left: 0%;right:50%;
+    height:$bar-size;
+    box-shadow: $glow;
+    border-radius: 50%;
+    animation:bar-bottom;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+#top{
+    top:0%;
+}
+#bottom{
+    bottom:0%;
+}
+.filler{
+    display:grid;
+    grid-template-columns: 23% 54% 23%;
+    grid-auto-rows: minmax(110px, auto);
+    grid-row-gap: 0em;
+}
+.container{
+    display:grid;
+    grid-template-columns: 23% 54% 23%;
+    grid-auto-rows: minmax(300px, auto);
+    // grid-column-gap: 1em;
+    grid-row-gap: 0em;
+}
+@keyframes bar-left{
+    0%{
+        bottom: 0%;
+    }
+    100%{
+        bottom: 100%;
+    }
+}
+@keyframes bar-right{
+    0%{
+        top:0%
+    }
+    100%{
+        top: 100%;
+    }
+}
+@keyframes bar-top{
+    0%{
+        left:50%
+    }
+    100%{
+        left: 100%;
+    }
+}
+@keyframes bar-bottom{
+    0%{
+        right:50%
+    }
+    100%{
+        right: 100%;
+    }
+}

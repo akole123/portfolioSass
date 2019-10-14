@@ -1,0 +1,64 @@
+img{
+    max-width: 60px;
+    max-height: 60px;
+}
+@import "./outerbar";
+@import "./aboutme";
+body{
+    margin: 0;
+    padding: 0;
+    margin-top: 20px; 
+    min-height: 70vh;
+    display: flex;
+    flex-grow: 1;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-image: url("../projectpics/backgroundimage.jpg");
+    // background-repeat: no-repeat;
+}
+body .navigation.lowresolve,
+body .fullcontain.lowresolve{
+    display:none;
+}
+@import "./navcontain";
+@import "./keyframes";
+
+.fullcontain .container .card .project.info{
+    align-items: center;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #fff;
+    display:grid;   
+}
+.fullcontain .container .card .project.info .buttons a{ 
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    background: #DEC849;
+}
+
+
+@mixin btn($background, $color) {
+    border: 3px solid rgba(255,255,255,0); 
+    color: $color;
+    background: $background;
+  } 
+  
+.btn {
+    padding: 1em;
+    line-height: 1em;
+    letter-spacing: 0.1em;
+    transition: border-color 0.2s ease-in-out, background 0.2s ease-in-out, color 0.2s ease-in-out;
+    &.-white {
+        @include btn(#2C88E5, #2C88E5);
+    }
+    &.-yellow {
+        @include btn(#2C88E5, #2C88E5);
+    }
+}
+@import "./media";
+@import "./project1";
+@import "./project2";
+@import "./project3";
+@import "./project4";
+@import "./project5";

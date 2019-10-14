@@ -1,0 +1,259 @@
+.navigation{
+    display:grid;
+    max-height: 100px;
+    min-width: 400px;
+}
+.navigation .button1{
+    position:relative;
+    float:right;    
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 150px;
+    color: #333333;
+    background: #fff;
+    border-color: transparent;
+
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;    
+    border-bottom: 1px solid #fff;   
+    -webkit-animation: fadein 10s; 
+    -moz-animation: fadein 10s; 
+    -ms-animation: fadein 10s;  
+    -o-animation: fadein 10s; 
+    animation: fadein 10s;
+}
+
+.navigation .button2{
+    position:relative;
+    float:right;    
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    width: 150px;
+    color: #fff;
+    background: #333;
+    border-color: transparent;
+
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;    
+    border-bottom: 1px solid #fff;   
+    -webkit-animation: fadein 10s; 
+    -moz-animation: fadein 10s; 
+    -ms-animation: fadein 10s;  
+    -o-animation: fadein 10s; 
+    animation: fadein 10s;
+}
+
+.fullcontain{
+    position:relative;
+    justify-content: space-between; 
+    overflow: hidden;
+    max-height: 100vh;
+    min-height: 94vh;
+}
+.fullcontain{
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5); 
+    background-color: rgba(220,220,220,0.2);
+    // border: 2px solid #fff;
+    animation-delay: 5s;
+    -webkit-animation: fadein 3s; 
+    -moz-animation: fadein 3s; 
+    -ms-animation: fadein 3s;   
+    -o-animation: fadein 3s; 
+    animation: fadein 3s;
+}
+.container{
+    width: 1000px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;     
+    -webkit-animation: fadein 5s; 
+    -moz-animation: fadein 5s; 
+    -ms-animation: fadein 5s; 
+    -o-animation: fadein 5s; 
+    animation: fadein 5s;
+}   
+.fullcontain.lowresolve{
+    width: 1100px;
+}
+.container .card{
+    min-width: 300px;
+    min-height:228px;
+    // display: flex;
+    //  -wrap: wrap;
+}
+.container .card .project{
+    width: 300px;
+    height:228px;
+    transition: 0.5s;
+
+}
+.container .card .project.tech{
+    position: relative;
+    background:#333;
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(114px);
+}
+.container .card .project.tech .title{
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 30% 70%;
+}
+.container .card .project.tech .title .name{
+    opacity: 1;
+    font-family: omic Sans MS, Comic Sans, cursive;
+    font-weight: 300;
+    color: #fff;
+}
+.container .card .project.tech .skills{
+    font-family: omic Sans MS, Comic Sans, cursive;
+    text-align: center;
+    color: #fff;
+}
+.container .card .project.info{
+    position: relative;
+    background: #fff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-114px);
+}
+.container .card .project.info.one{
+    position: relative;
+    background:#2C88E5;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; 
+    transform: translateY(-114px);
+}
+.container .card:hover .project.tech .title.one .name{
+    opacity: 1;
+    color: #2C88E5;
+}
+.container .card .project.info.two{
+    position: relative;
+    background:#E5822C;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-114px);
+}
+.container .card:hover .project.tech .title.two .name{
+    color: #E5822C;
+}
+.container .card .project.info.three{
+    position: relative;
+    background:#4DE977;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-114px);
+}
+.container .card .project.tech:hover .title.three .name{
+    color: #4DE977;
+}
+.container .card .project.info.fourth{
+    position: relative;
+    background:#D9D43E;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-114px);
+}
+.container .card:hover .project.tech .title.fourth .name{
+    color: #D9D43E;
+}
+.container .card .project.info.five{
+    position: relative;
+    background:#2713AC;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: translateY(-114px);
+}
+.container .card:hover .project.tech .title.five .name{
+    color: #2713AC;
+}
+.container .card:hover .project.tech .title{
+    color: #2713AC;
+}
+.container .card:hover .project.tech{
+    transform: translateY(0);
+}
+.container .card:hover .project.info{
+    transform: translateY(0);
+}
+
+span:nth-child(1)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: $glow;  
+    transform: translateX(-100%);
+    animation: animate1 1s linear 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+span:nth-child(2)
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: $glow;  
+    animation: animate2 0.7s linear 1;
+    transform: translateY(-100%);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+span:nth-child(3)
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    border-radius: 50%;
+    box-shadow: $glow;  
+    transform: translateX(100%);
+    animation: animate3 1s linear 1;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+span:nth-child(4)
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 0%;
+    border-radius: 50%;
+    box-shadow: $glow;  
+    animation: animate4 1s linear 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}

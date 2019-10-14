@@ -1,0 +1,51 @@
+.fullcontain .aboutme{
+    text-align: center;
+    font-size: 300px;
+}
+.line{
+    position: relative;
+    text-align: center; 
+    color: #ffffff;
+    width: 24em;
+    border-right: 2px solid rgba(255,255,255,0.75);
+    margin: 0 auto;
+    white-space: nowrap;
+    font-size: 30px;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+.line.anim-typewriter{
+    animation: typewriter 2s steps(40) 1s 1 normal both,
+    blinkTextCursor 2s steps(40) infinite normal;
+}
+@keyframes typewriter{
+    from{
+        width: 0;
+    }to {
+        width: 24em;
+    }
+}
+@keyframes blinkTextCursor{
+    from {
+        border-right-color: rgba(255,255,255,0.75);
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+.icon-links{
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    justify-content: space-between; 
+    // padding: 13em;
+}
+.icon-links img{
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 80px;
+    min-width: 80px;
+    max-height: 80px;
+    min-height: 80px;
+}
